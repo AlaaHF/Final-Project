@@ -1,0 +1,14 @@
+html{
+    background-color: maroon;
+}
+
+body{
+    color: white;
+    font-family: 'Merriweather', serif;
+    margin: 100px 20px;
+}
+
+span{
+    color: white;
+    text-decoration: underline;
+}

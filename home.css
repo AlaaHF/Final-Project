@@ -1,0 +1,82 @@
+html{
+    background-color: maroon;
+}
+
+body{
+    background-color: white;
+    margin:50px 125px;
+    padding: 10px 50px 50px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    width: 900px;
+}
+
+img{
+    padding: 5px;
+}
+
+h1{
+    font-family: 'Merienda', cursive;
+    font-size: 30px;
+}
+
+h2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    color: maroon;
+}
+
+#table1{
+    margin: auto;
+    padding: 10px;
+}
+
+#title-input, #author-input{
+    padding: 10px;
+}
+
+button{
+    padding: 10px 15px;
+    background-color: maroon;
+    color: white;
+    border: 3px solid lightgray;
+    border-radius: 10px;
+    margin: 0px 3px 20px;
+}
+
+p.logout{
+    margin: 30px 10px 0px 800px;
+    text-align: center;
+    padding: 10px;
+    background-color: maroon;
+    color: white;
+    border: 3px solid lightgray;
+    border-radius: 10px;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+#table2{
+    margin: auto;
+    padding: 10px 5px;
+    border: 2px solid black;
+}
+
+#title, #author{
+    padding: 0px 150px;
+}
+#title{
+    border-right: 2px solid black;
+}
+
+hr{
+    width: 900px;
+}

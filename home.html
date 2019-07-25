@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ML Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+
+<body onload="typeText()">
+    <p class="logout">
+        <a id="logout-link" href="logout.html"><span id="logout-btn">Logout</span></a>
+    </p>
+    <h1 id="welcome"></h1>
+    
+    <h3>Please note that the library only owns the books you see on this page. If you would like to request any books that we do not currently have, please do so at the bottom of this page.</h3>
+    <hr>
+
+    <h2>Our Favourites</h2>
+    <p>
+        <img id="s1b1" src="images/not-a-penny-more-not-a-penny-less.jpg" alt="Not a Penny More, Not a Penny Less"
+            width="179px">
+        <img id="s1b2" src="images/the-sixth-victim.jpg" alt="The Sixth Victim" width="200px">
+        <img id="s1b3" src="images/and-only-to-deceive.jpg" alt="And Only to Deceive" width="202px">
+        <img id="s1b4" src="images/homes.jpg" alt="Homes" width="195px">
+        <p id="s1-text"></p>
+        <hr>
+
+    </p>
+    <h2>Mystery</h2>
+    <p>
+        <img id="s2b1" src="images/daddy's-gone-a-hunting.jpg" alt="Daddy's Gone A Hunting" width="200px">
+        <img id="s2b2" src="images/i'll-walk-alone.jpg" alt="I'll Walk Alone" width="187px">
+        <img id="s2b3" src="images/the-man-in-the-brown-suit.jpg" alt="The Man in the Brown Suit" width="200px">
+        <img id="s2b4" src="images/murder-on-the-orient-express.jpg" alt="Murder on the Orient Express" width="201px">
+        <p id="s2-text"></p>
+        <hr>
+
+    </p>
+
+    <h2>Horror</h2>
+    <p>
+        <img id="s3b1" src="images/you-may-now-kill-the-bride.png" alt="You May Now Kill The Bride" width="203px">
+        <img id="s3b2" src="images/dont-stay-up-late.png" alt="Don't Stay Up Late" width="203px">
+        <img id="s3b3" src="images/the-confession.png" alt="The Confession" width="203px">
+        <img id="s3b4" src="images/dead-end.png" alt="Dead End" width="203px">
+        <p id="s3-text"></p>
+        <hr>
+
+    </p>
+
+    <h2>Romance</h2>
+    <p>
+        <img id="s4b1" src="images/the-fault-in-our-stars.jpg" alt="The Fault in Our Stars" width="192px">
+        <img id="s4b2" src="images/twilight.jpg" alt="Twilight" width="201px">
+        <img id="s4b3" src="images/star-girl.jpg" alt="Stargirl" width="197px">
+        <img id="s4b4" src="images/the-notebook.jpg" alt="The Notebook" width="196px">
+        <p id="s4-text"></p>
+        <hr>
+
+    </p>
+
+    <h2>Classic Literature</h2>
+    <p>
+        <img id="s5b1" src="images/pride-and-prejudice.jpg" alt="Pride and Prejudice" width="202px">
+        <img id="s5b2" src="images/a-tale-of-two-cities.jpg" alt="I'll Walk Alone" width="200px">
+        <img id="s5b3" src="images/to-kill-a-mockingbird.jpg" alt="The Man in the Brown Suit" width="189px">
+        <img id="s5b4" src="images/jane-eyre.jpg" alt="Jane Eyre" width="180px">
+        <p id="s5-text"></p>
+        <hr>
+
+    </p>
+
+    <p>Are there any books you'd like to see in our library? Leave the title and author's name below to request the
+        books you wish to see!</p>
+    <table id="table1">
+        <tr>
+            <td id="title-input">Title: <input id="input1" type="text"></td>
+            <td id="author-input">Author's Name: <input id="input2" type="text"></td>
+
+
+        </tr>
+
+    </table>
+
+    <button id="request-book">Request Book</button>
+    <button id="clear">Clear Input</button>
+
+    <table id="table2">
+        <tr>
+            <td id="title"><b>Title</b></td>
+            <td id="author"><b>Author's Name</b></td>
+
+        </tr>
+        <tr id="entry1">
+            <td id="cell1"></td>
+            <td id="cell2"></td>
+        </tr>
+
+    </table>
+
+
+
+    <!-- Load JavaScript -->
+    <script src="home.js"></script>
+    <script>
+        let i = 0;
+        let txt =
+            'Welcome to our home page. Here, you will find a multitude of books based on the genres you prefer. Click on each image to view a description of each book.'
+        let speed = 60;
+
+        function typeText() {
+            if (i < txt.length) {
+                document.getElementById('welcome').innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeText, speed);
+            }
+        }
+    </script>
+</body>
+
+</html>
